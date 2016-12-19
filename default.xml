@@ -26,6 +26,5 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" remote="aosp" />
   <include name="snippets/rr-n.xml" />
-  <include name="snippets/cm.xml" />
 
 </manifest>
