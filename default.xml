@@ -2,8 +2,8 @@
 <manifest>
 
   <remote  name="github"
-           fetch="https://github.com/"
-           review="review.cyanogenmod.org" />
+           fetch=".."
+           review="review.lineageos.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -11,7 +11,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-7.1.1_r6" />
+           revision="refs/tags/android-7.1.1_r25" />
 
   <default revision="refs/heads/cm-14.1"
            remote="github"
@@ -23,7 +23,7 @@
 	   revision="nougat" />
 
   <!-- AOSP Projects -->
-  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" remote="aosp" />
+  <project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" groups="pdk" clone-depth="1" remote="github" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" remote="aosp" />
   <include name="snippets/rr-n.xml" />
 
